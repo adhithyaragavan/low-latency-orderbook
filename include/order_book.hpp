@@ -23,4 +23,6 @@ private:
     BidMap bids_;
     AskMap asks_;
     std::unordered_map<OrderId,Order*> order_map_;
+    
+    friend class MatchingEngine;
 };
